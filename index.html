@@ -1,40 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Projet</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li>Réservation</li>
-        <li>Carte</li>
-        <li>Bon appetit</li>
-        <li>Témoignages</li>
-        <li>Nous contactez</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section clas="start">
-    <div class="signature">
-      <img src="./img/signature.png" alt="Signature">
-    </div>
-    <img src="./img/cover_dark.jpg" alt="Image acceuil">
-  </section>
-    <section>
-      <legend for="nom">Dans la galaxie, on vous appelle…</legend>
-      <input minlength="2" type="text" id="nom" required placeholder="Prénom" autocomplete="name"/>
-    </section>
-  </main>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Bebas+Neue&family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bon appetit</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="#reserv"><li>Réservation</li></a>
+          <a href="#carte"><li>Carte</li></a>
+          <li><h1>Bon appetit</h1></li>
+          <a href="#temoi"><li>Témoignages</li></a>
+          <a href="#contact"><li>Nous contactez</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="container-start"></article>
+      <section class="container-menu">
+        <div class="title-menu">
+          <div class="bar-carte-left"></div>
+          <h2><a id="carte" href="#carte">À la carte</a></h2>
+          <div class="bar-carte-right"></div>
+        </div>
+        <section class="container-cards">
+          <section class="menu-cards-left">
+            <section class="menu-cards">
+              <img src="./img/food_1_dark.jpg" alt="" />
+              <h3>Tartare de bœuf aux légumes.</h3>
+              <p>
+                Tartare de boeuf de qualité supérieure, finement haché et
+                assaisonné avec soin, pour révéler la tendreté et la saveur
+                naturelle de la viande.<br /><br />
+
+                Ce tartare est accompagné de légumes croquants – dés de
+                concombre, céleri et radis – qui apportent fraîcheur et texture
+                à chaque bouchée. <br /><br />
+
+                Le tout est relevé d’une pointe de moutarde à l’ancienne, d’une
+                touche d’huile d’olive fruitée et d’herbes fraîches finement
+                ciselées, offrant un équilibre parfait entre douceur et
+                vivacité. <br /><br />
+
+                Servi avec quelques tranches de pain grillé et une légère
+                salade, ce tartare est un plat sophistiqué et plein de
+                caractère.
+              </p>
+            </section>
+            <section class="menu-cards">
+              <img src="./img/food_7_dark.jpg" alt="" />
+              <h3>Steak de viande rôti.</h3>
+              <p>
+                Salade de pâtes légère et colorée, où chaque ingrédient apporte
+                fraîcheur et saveur. Les pâtes al dente sont mêlées à des
+                lamelles de courgettes croquantes et légèrement marinées,
+                rehaussées par le goût poivré et intense de la roquette.<br /><br />
+
+                Des copeaux généreux de parmesan affiné ajoutent une touche de
+                crémeux et de caractère, fondant subtilement dans le mélange.
+                <br /><br />
+
+                Le tout est agrémenté d'un filet d'huile d'olive extra vierge et
+                d’une pointe de jus de citron, apportant une note acidulée qui
+                équilibre ce plat estival. <br /><br />
+
+                Une salade délicate et savoureuse, parfaite pour un repas à la
+                fois léger et raffiné.
+              </p>
+            </section>
+            <section class="menu-cards">
+              <img src="./img/food_5_dark.jpg" alt="" />
+              <h3>Éclaté de homard au Savagnin.</h3>
+              <p>
+                Magret de canard delicatement roti, a la chair tendre et
+                juteuse, finement tranche pour reveler une cuisson rosee
+                parfaite. Ce plat est sublime par une reduction de vinaigre
+                balsamique infusee aux epices douces, qui apporte une touche de
+                douceur et d'acidite.<br /><br />
+
+                Le magret est accompagne d’une puree de patates douces
+                onctueuse, relevee d’une pointe de gingembre frais, et d’un
+                assortiment de legumes de saison croquants, cuits a la
+                perfection pour offrir un equilibre de textures et de
+                saveurs.<br /><br />
+
+                Un plat raffine, aux aromes profonds, qui ravira les amateurs de
+                haute gastronomie.
+              </p>
+            </section>
+            <section class="menu-cards">
+              <img src="./img/food_4_dark.jpg" alt="" />
+              <h3>Hamburger</h3>
+              <p>
+                Steak de viande savamment rôti, aux arômes grillés et à la
+                texture fondante, nappé d'une sauce tomate maison riche et
+                parfumée.<br /><br />
+                Cette sauce onctueuse, préparée avec des tomates mûries au
+                soleil, est rehaussée de fines herbes méditerranéennes qui
+                exhalent des senteurs estivales. <br /><br />
+
+                Le steak est accompagné de tomates cerises confites, éclatantes
+                et juteuses, et garni d'un oeuf poché, dont le jaune coulant
+                ajoute une douceur onctueuse à chaque bouchée. <br /><br />
+
+                Un plat généreux, qui marie des saveurs riches et ensoleillées
+                dans un équilibre parfait.
+              </p>
+            </section>
+            <section class="menu-cards">
+              <img src="./img/food_11_dark.jpg" alt="" />
+              <h3>Salade pâtes, courgettes.</h3>
+              <p>
+                Hamburger gourmet, où chaque ingrédient est soigneusement
+                sélectionné pour une expérience gustative de haut vol.<br /><br />
+
+                Le pain brioché, légèrement toasté, est moelleux et doré, prêt à
+                accueillir un steak de boeuf juteux et parfaitement saisi, issu
+                d’une viande de qualité supérieure. <br /><br />
+
+                Ce coeur tendre est sublimé par un fromage affiné fondant, qui
+                enveloppe le steak de sa richesse. Des tranches fines de tomates
+                fraîches, de la laitue croquante et des rondelles d'oignons
+                caramélisés ajoutent une harmonie de textures, tandis qu'une
+                sauce maison légèrement relevée lie l'ensemble avec
+                subtilité.<br /><br />
+
+                Un burger raffiné, où chaque bouchée est un équilibre parfait de
+                saveurs et de gourmandise
+              </p>
+            </section>
+            <section class="menu-cards">
+              <img src="./img/food_10_dark.jpg" alt="" />
+              <h3>Magret de canard.</h3>
+              <p>
+                Éclaté de homard au Savagnin, une création raffinée qui dévoile
+                la chair tendre et délicate du homard, sublimée par une
+                réduction de vin Savagnin aux arômes profonds et légèrement
+                boisés.<br /><br />
+
+                Ce plat sophistiqué s'accompagne d'un mariage subtil d'épices –
+                une touche de cardamome et de poivre de Timut – qui rehausse les
+                saveurs marines sans les dominer.<br /><br />
+
+                Le homard est présenté sur un lit de légumes croquants et de
+                jeunes pousses, apportant fraîcheur et équilibre à ce mets
+                exquis. <br /><br />
+
+                Un voyage culinaire audacieux où la mer rencontre les nuances
+                parfumées du terroir jurassien.<br /><br />
+                Un plat qui évoque l'élégance et la subtilité, parfait pour une
+                expérience gastronomique inoubliable !
+              </p>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section id="chef">
+        <section class="section-title">
+          <div class="bar-section-left"></div>
+          <h2>le chef Michel Bouillon</h2>
+          <div class="bar-section-right"></div>
+        </section>
+        <div class="img-chef"><img src="./img/chef_dark.jpg" alt="Photo du chef" /></div>
+      </section>
+      <section id="creation">
+        <section class="creation-title">
+          <div class="bar-creation-left"></div>
+          <h2>Ses plus belles créations</h2>
+          <div class="bar-creation-right"></div>
+      </section>
+      <section class="container-creation-cards">
+        <div class="creation-cards"><img src="./img//food_6_dark.jpg" alt=""><p>Éclaté de homard au Savagnin et mariage d’épices</p></div>
+        <div class="creation-cards"><img src="./img//food_6_dark.jpg" alt=""><p>Éclaté de homard au Savagnin et mariage d’épices</p></div>
+        <div class="creation-cards"><img src="./img//food_6_dark.jpg" alt=""><p>Éclaté de homard au Savagnin et mariage d’épices</p></div>
+      </section>
+      <section id="event">
+        <section class="event-title">
+          <div class="bar-event-left"></div>
+        <h2>Évènementiel</h2>
+          <div class="bar-event-right"></div>
+    </main>
+  </body>
 </html>

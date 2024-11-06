@@ -1,20 +1,35 @@
 body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: whitesmoke;
+  margin: 0;
+  height: 200vh;
+  width: 100vw;
+  font-family: "Raleway", serif;
   .italianno-regular {
     font-family: "Italianno", cursive;
     font-weight: 400;
     font-style: normal;
   }
-  height: 200vh;
-  width: 100vw;
+  .arapey-regular {
+    font-family: "Arapey", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.raleway {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 }
 
 header {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(20px);
-  padding: 20px;
+  padding: 20px 0 20px 0;
 }
 
 header nav ul {
@@ -23,22 +38,221 @@ header nav ul {
   margin: 0;
   list-style: none;
   align-items: center;
+  padding: 0;
 }
 
 header nav ul li:nth-child(3){
   font-family: "Italianno", cursive;
-  font-size: 60px;
+  font-size: 45px;
+}
+
+header nav ul li:nth-child(3) h1 {
+  margin: 0;
 }
 
 header nav ul li {
   font-size: 20px;
 }
 
-main section img{
+ul a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+article.container-start {
+  height: 100vh;
+  background-image: url(./img/cover_dark.png);
+  background-attachment: fixed;
+}
+
+section.start img{
+  width: 100vw;
+  height: 100vh;
+}
+
+section.container-menu {
   width: 100vw;
 }
 
-div.signature {
-  position: absolute;
-  width: 20%;
+div.title-menu {
+  display: flex;
+  align-items: center;
+  font-family: "Italianno", cursive;
+  justify-content: space-between;
+  font-size: 45px;
+  width: 100vw;
+  height: 10vh;
+}
+
+div.title-menu a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+section.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+section.menu-cards {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+section.menu-cards-left {
+  overflow-x: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2vw;
+  scrollbar-width: none;
+}
+
+section.menu-cards-left img {
+  height: 40%;
+}
+
+section.menu-cards-left h3 {
+  display: flex;
+  font-family: "Italianno", cursive;
+  justify-content: center;
+  font-size: 60px;
+}
+
+section.menu-cards-left a {
+  text-align: center;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+section.section-title {
+  display: flex;
+  align-items: center;
+  font-family: "Italianno", cursive;
+  justify-content: space-between;
+  font-size: 60px;
+  width: 100vw;
+  height: 10vh;
+}
+
+.bar-section-left {
+  background-color: whitesmoke;
+  width: 30vw;
+  height: 0.2vh;
+}
+
+.bar-section-right {
+  background-color: whitesmoke;
+  width: 30vw;
+  height: 0.2vh;
+}
+
+.bar-carte-left {
+  background-color: whitesmoke;
+  width: 40vw;
+  height: 0.2vh;
+}
+
+.bar-carte-right {
+  background-color: whitesmoke;
+  width: 40vw;
+  height: 0.2vh;
+}
+
+#chef {
+  width: 100vw;
+  height: 120vh;
+}
+
+#chef img {
+  width: 80vw;
+  height: 110vh;
+}
+
+.img-chef {
+  display: flex;
+  justify-content: center;
+}
+
+#creation {
+  width: 100vw;
+  height: 100vh;
+}
+
+.bar-creation-left {
+  background-color: whitesmoke;
+  width: 35vw;
+  height: 0.2vh;
+}
+
+.bar-creation-right {
+  background-color: whitesmoke;
+  width: 35vw;
+  height: 0.2vh;
+}
+
+section.creation-title {
+  display: flex;
+  align-items: center;
+  font-family: "Italianno", cursive;
+  justify-content: space-between;
+  font-size: 45px;
+  width: 100vw;
+  height: 10vh;
+}
+
+.container-creation-cards {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.creation-cards {
+  width: 30%;
+  height: 60vh;
+}
+
+.creation-cards img {
+  width: 100%;
+  height: 60%;
+}
+
+.creation-cards p {
+  font-family: "Italianno", cursive;
+  font-size: 40px;
+  align-items: center;
+}
+
+#event {
+  width: 100vw;
+  height: 70vh;
+}
+
+.bar-event-left {
+  background-color: whitesmoke;
+  width: 35vw;
+  height: 0.2vh;
+}
+
+.bar-event-right {
+  background-color: whitesmoke;
+  width: 35vw;
+  height: 0.2vh;
+}
+
+section.event-title {
+  display: flex;
+  align-items: center;
+  font-family: "Italianno", cursive;
+  justify-content: space-between;
+  font-size: 45px;
+  width: 100vw;
+  height: 10vh;
 }

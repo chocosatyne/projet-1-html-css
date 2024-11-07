@@ -59,6 +59,15 @@ ul a {
   color: whitesmoke;
 }
 
+ul a {
+  transition: all 0.3s;
+}
+
+ul a:hover {
+  scale: 1.05;
+}
+
+
 article.container-start {
   height: 100vh;
   background-image: url(./img/cover-start.png);
@@ -71,7 +80,6 @@ section.start img{
 }
 
 section.container-menu {
-  box-shadow:0 0 10px 5px black ;
   width: 100vw;
 }
 
@@ -219,8 +227,14 @@ section.creation-title {
 }
 
 .creation-cards {
+  overflow: hidden;
   width: 30%;
   height: 60vh;
+  transition: all 0.3s;
+}
+
+.creation-cards:hover {
+  scale: 1.05;
 }
 
 .creation-cards img {

@@ -1,44 +1,107 @@
-body {
-  .italianno-regular {
-    font-family: "Italianno", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  height: 200vh;
-  width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/testimonal_background_dark.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-header {
-  position: absolute;
-  width: 100%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(20px);
-  padding: 20px;
+
+
+/* Titre section Témoignages */
+
+h2#titre{
+    margin-top: O;
+    text-align: center;
+    font-family: "Tangerine", cursive ;
+    font-size: 80px; 
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  list-style: none;
-  align-items: center;
+
+h2#titre{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #ffffff;
 }
 
-header nav ul li:nth-child(3){
-  font-family: "Italianno", cursive;
-  font-size: 60px;
+
+h2#titre::before,
+h2#titre::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ffffff;
+    margin: 0 10px;
 }
 
-header nav ul li {
-  font-size: 20px;
+
+
+#images-avis{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
 }
 
-main section img{
-  width: 100vw;
+#photo1{
+    width:400px ;
+    height: 400px;
 }
 
-div.signature {
-  position: absolute;
-  width: 20%;
+#photo2{
+    width:400px ;
+    height:400px ;
+    padding-left: 30px;
 }
+
+#photo3{
+    width:400px ;
+    height:400px ;
+}
+
+
+#texte-avis{
+    display: flex;
+    justify-content: baseline;
+    margin: 10px;
+    padding: 50px;
+}
+
+
+
+
+#avis1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:20px;
+    margin-left: 20px;
+    padding-right: 20%;
+    color: white;
+}
+
+#avis2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right:20px;
+    margin-left: 20px;
+    padding-right: 20%;
+    color: white;
+}
+#avis3{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right:20px;
+    margin-left: 20px;
+    color: white;
+}
+

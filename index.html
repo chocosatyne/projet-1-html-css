@@ -1,40 +1,474 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Projet</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li>Réservation</li>
-        <li>Carte</li>
-        <li>Bon appetit</li>
-        <li>Témoignages</li>
-        <li>Nous contactez</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section clas="start">
-    <div class="signature">
-      <img src="./img/signature.png" alt="Signature">
-    </div>
-    <img src="./img/cover_dark.jpg" alt="Image acceuil">
-  </section>
-    <section>
-      <legend for="nom">Dans la galaxie, on vous appelle…</legend>
-      <input minlength="2" type="text" id="nom" required placeholder="Prénom" autocomplete="name"/>
-    </section>
-  </main>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italianno&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Bebas+Neue&family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Titre de la page -->
+    <title>Bon appetit</title>
+  </head>
+
+  <body>
+    <!-- Section en-tête du site -->
+    <header>
+      <nav>
+        <!-- Menu de navigation avec des liens vers différentes sections de la page -->
+        <ul>
+          <a href="#form"><li>Réservation</li></a>
+          <a href="#carte"><li>Carte</li></a>
+          <li><h1>Bon appetit</h1></li>
+          <a href="#rev"><li>Témoignages</li></a>
+          <a href="#priv"><li>Privatisation</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Section principale du contenu de la page -->
+    <main>
+      <article class="container-start"></article>
+
+      <!-- Section dédiée à la carte des plats -->
+      <section class="container-menu">
+        <div class="title-menu">
+          <div class="bar-carte-left"></div>
+          <h2><a id="carte" href="#carte">À la carte</a></h2>
+          <div class="bar-carte-right"></div>
+        </div>
+
+        <!-- Conteneur pour afficher les différentes cartes de plats -->
+        <section class="container-cards">
+          <section class="menu-cards-left">
+            <!-- Carte pour le Magret de canard avec image, titre et description -->
+            <section class="menu-cards">
+              <img src="./img/food_1_dark.jpg" alt="" />
+              <h3>Magret de canard.</h3>
+              <p>
+                Magret de canard delicatement roti, a la chair tendre et
+                juteuse, finement tranche pour reveler une cuisson rosee
+                parfaite. Ce plat est sublime par une reduction de vinaigre
+                balsamique infusee aux epices douces, qui apporte une touche de
+                douceur et d'acidite.<br /><br />
+
+                Le magret est accompagne d’une puree de patates douces
+                onctueuse, relevee d’une pointe de gingembre frais, et d’un
+                assortiment de legumes de saison croquants, cuits a la
+                perfection pour offrir un equilibre de textures et de
+                saveurs.<br /><br />
+
+                Un plat raffine, aux aromes profonds, qui ravira les amateurs de
+                haute gastronomie.
+              </p>
+            </section>
+
+            <!-- Carte pour le Steak de viande rôti -->
+            <section class="menu-cards">
+              <img src="./img/food_7_dark.jpg" alt="" />
+              <h3>Steak de viande rôti.</h3>
+              <p>
+                Steak de viande savamment rôti, aux arômes grillés et à la
+                texture fondante, nappé d'une sauce tomate maison riche et
+                parfumée.<br /><br />
+                Cette sauce onctueuse, préparée avec des tomates mûries au
+                soleil, est rehaussée de fines herbes méditerranéennes qui
+                exhalent des senteurs estivales. <br /><br />
+
+                Le steak est accompagné de tomates cerises confites, éclatantes
+                et juteuses, et garni d'un oeuf poché, dont le jaune coulant
+                ajoute une douceur onctueuse à chaque bouchée. <br /><br />
+
+                Un plat généreux, qui marie des saveurs riches et ensoleillées
+                dans un équilibre parfait.
+              </p>
+            </section>
+
+            <!-- Autres cartes de plats suivent le même modèle -->
+            <section class="menu-cards">
+              <img src="./img/food_5_dark.jpg" alt="" />
+              <h3>Éclaté de homard au Savagnin.</h3>
+              <p>
+                Éclaté de homard au Savagnin, une création raffinée qui dévoile
+                la chair tendre et délicate du homard, sublimée par une
+                réduction de vin Savagnin aux arômes profonds et légèrement
+                boisés.<br /><br />
+
+                Ce plat sophistiqué s'accompagne d'un mariage subtil d'épices –
+                une touche de cardamome et de poivre de Timut – qui rehausse les
+                saveurs marines sans les dominer.<br /><br />
+
+                Le homard est présenté sur un lit de légumes croquants et de
+                jeunes pousses, apportant fraîcheur et équilibre à ce mets
+                exquis. <br /><br />
+
+                Un voyage culinaire audacieux où la mer rencontre les nuances
+                parfumées du terroir jurassien.<br /><br />
+                Un plat qui évoque l'élégance et la subtilité, parfait pour une
+                expérience gastronomique inoubliable !
+              </p>
+            </section>
+
+            <section class="menu-cards">
+              <img src="./img/food_4_dark.jpg" alt="" />
+              <h3>Hamburger</h3>
+              <p>
+                Hamburger gourmet, où chaque ingrédient est soigneusement
+                sélectionné pour une expérience gustative de haut vol.<br /><br />
+
+                Le pain brioché, légèrement toasté, est moelleux et doré, prêt à
+                accueillir un steak de boeuf juteux et parfaitement saisi, issu
+                d’une viande de qualité supérieure. <br /><br />
+
+                Ce coeur tendre est sublimé par un fromage affiné fondant, qui
+                enveloppe le steak de sa richesse. Des tranches fines de tomates
+                fraîches, de la laitue croquante et des rondelles d'oignons
+                caramélisés ajoutent une harmonie de textures, tandis qu'une
+                sauce maison légèrement relevée lie l'ensemble avec
+                subtilité.<br /><br />
+
+                Un burger raffiné, où chaque bouchée est un équilibre parfait de
+                saveurs et de gourmandise
+              </p>
+            </section>
+
+            <section class="menu-cards">
+              <img src="./img/food_11_dark.jpg" alt="" />
+              <h3>Salade pâtes, courgettes.</h3>
+              <p>
+                Salade de pâtes légère et colorée, où chaque ingrédient apporte
+                fraîcheur et saveur. Les pâtes al dente sont mêlées à des
+                lamelles de courgettes croquantes et légèrement marinées,
+                rehaussées par le goût poivré et intense de la roquette.<br /><br />
+
+                Des copeaux généreux de parmesan affiné ajoutent une touche de
+                crémeux et de caractère, fondant subtilement dans le mélange.
+                <br /><br />
+
+                Le tout est agrémenté d'un filet d'huile d'olive extra vierge et
+                d’une pointe de jus de citron, apportant une note acidulée qui
+                équilibre ce plat estival. <br /><br />
+
+                Une salade délicate et savoureuse, parfaite pour un repas à la
+                fois léger et raffiné.
+              </p>
+            </section>
+
+            <section class="menu-cards">
+              <img src="./img/food_10_dark.jpg" alt="" />
+              <h3>Tartare de bœuf aux légumes.</h3>
+              <p>
+                Tartare de boeuf de qualité supérieure, finement haché et
+                assaisonné avec soin, pour révéler la tendreté et la saveur
+                naturelle de la viande.<br /><br />
+
+                Ce tartare est accompagné de légumes croquants – dés de
+                concombre, céleri et radis – qui apportent fraîcheur et texture
+                à chaque bouchée. <br /><br />
+
+                Le tout est relevé d’une pointe de moutarde à l’ancienne, d’une
+                touche d’huile d’olive fruitée et d’herbes fraîches finement
+                ciselées, offrant un équilibre parfait entre douceur et
+                vivacité. <br /><br />
+
+                Servi avec quelques tranches de pain grillé et une légère
+                salade, ce tartare est un plat sophistiqué et plein de
+                caractère.
+              </p>
+            </section>
+          </section>
+        </section>
+      </section>
+
+      <!-- Section dédiée au chef avec photo et description -->
+      <section id="chef">
+        <section class="section-title">
+          <div class="bar-section-left"></div>
+          <h2>le chef Michel Bouillon</h2>
+          <div class="bar-section-right"></div>
+        </section>
+        <div class="img-chef">
+          <img src="./img/chef_dark.jpg" alt="Photo du chef" />
+        </div>
+      </section>
+
+      <!-- Section pour les créations du chef -->
+      <section id="creation">
+        <section class="creation-title">
+          <div class="bar-creation-left"></div>
+          <h2>Ses plus belles créations</h2>
+          <div class="bar-creation-right"></div>
+        </section>
+
+        <!-- Galerie des créations du chef -->
+        <section class="container-creation-cards">
+          <div class="creation-cards">
+            <img src="./img/food_4_dark.jpg" alt="" />
+            <p>Burger à la viande d'angus à la truffe</p>
+          </div>
+          <div class="creation-cards">
+            <img src="./img//food_5_dark.jpg" alt="" />
+            <p>Éclaté de homard au Savagnin et mariage d’épices</p>
+          </div>
+          <div class="creation-cards">
+            <img src="./img//food_1_dark.jpg" alt="" />
+            <p>Magret de canard.</p>
+          </div>
+        </section>
+      </section>
+
+      <!-- Section pour la privatisation du restaurant -->
+      <section id="priv">
+        <section class="priv-title">
+          <div class="bar-priv-left"></div>
+          <h2><a id="priv" href="#priv">Privatisation du restaurant</a></h2>
+          <div class="bar-priv-right"></div>
+        </section>
+
+        <!-- Galerie d'images pour illustrer les options de privatisation -->
+        <section class="container-priv-cards">
+          <div class="priv-cards">
+            <img src="./img/venue_3_dark.jpg" alt="" />
+            <p></p>
+          </div>
+          <div class="priv-cards">
+            <img src="./img/venue_4_dark.jpg" alt="" />
+            <p></p>
+          </div>
+          <div class="priv-cards">
+            <img src="./img/venue_1_dark.jpg" alt="" />
+            <p></p>
+          </div>
+          <div class="priv-cards">
+            <img src="./img/venue_2_dark.jpg" alt="" />
+            <p></p>
+          </div>
+          <div class="priv-cards">
+            <p>
+              Possibilité de privatiser le restaurant sous devis <br /><br />
+              certaines conditions sont requises afin de<br /><br />
+              pouvoir réserver le restaurant
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- Section des témoignages clients -->
+      <section class="review">
+        <div id="tout">
+          <section class="rev-title">
+            <div class="bar-rev-left"></div>
+            <h2><a id="rev" href="#rev">Temoignages</a></h2>
+            <div class="bar-rev-right"></div>
+          </section>
+
+          <!-- Section de témoignages clients, chaque témoignage inclut photo, nom et commentaire -->
+          <div id="images-avis">
+            <div class="test1">
+              <div id="img1">
+                <img
+                  id="photo1"
+                  src="./img/testimonial_1_dark.jpg"
+                  alt="photo de profil cliente"
+                />
+              </div>
+              <div id="avis1">
+                <p>Julie Dupond</p>
+                <small>15/06/24</small>
+                <p>
+                  Le lieu est absolument extraordinaire. La cuisine à couper le
+                  souffle. Nous avons été séduit par les différents plats
+                  choisis. Le service juste parfait. Nous remercions le
+                  personnel de l'accueil et, nous remercions pour la cuisine
+                  pour ces savoureux plats.
+                </p>
+              </div>
+            </div>
+
+            <div class="test2">
+              <div id="img2">
+                <img
+                  id="photo2"
+                  src="./img/testimonial_2_dark.jpg"
+                  alt="photo de profil cliente"
+                />
+              </div>
+              <div id="avis2">
+                <p>Juliette Dupont</p>
+                <small>17/03/24</small>
+                <p>
+                  Etablissement dans lequel on trouve l'Excellence : plats
+                  délicieux, conséquents et très bien présentés. Très bon
+                  accueil du personnel et attentif au moindre besoin du client.
+                  Nous reviendrons sans hésiter et vous ferons connaître. Un
+                  grand merci pour cette soirée inoubliable
+                </p>
+              </div>
+            </div>
+            <!-- Témoignage de Perrine Jolie -->
+
+            <div class="test3">
+              <div id="img3">
+                <img
+                  id="photo3"
+                  src="./img/testimonial_3_dark.jpg"
+                  alt="photo de profil cliente"
+                />
+              </div>
+              <div id="avis3">
+                <p>Perrine Jolie</p>
+                <!-- Nom de la cliente -->
+                <small>28/09/24</small>
+                <!-- Date du témoignage -->
+                <p>
+                  Le service était irréprochable, tout comme la cuisine. Les
+                  plats étaient succulent, copieux et servis avec le plus grand
+                  soin. Nous avons passé un superbe moment et nous reviendrons
+                  sans hésitation.
+                </p>
+                <!-- Commentaire du client -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section du formulaire de réservation de table -->
+      <section class="form-title">
+        <div class="bar-form-left"></div>
+        <h2><a id="form" href="#form">Formulaire</a></h2>
+        <!-- Titre du formulaire avec lien d'ancrage -->
+        <div class="bar-form-right"></div>
+      </section>
+
+      <!-- Conteneur du formulaire de réservation -->
+      <section class="container-form">
+        <div class="reservation-container">
+          <h2>Réservation d'une table</h2>
+          <!-- Titre de la section de réservation -->
+
+          <!-- Formulaire de réservation avec des champs pour les informations clients -->
+          <form action="#" method="POST">
+            <!-- Méthode POST utilisée pour envoyer les données -->
+
+            <!-- Champ pour le nom complet -->
+            <div class="formualaire">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required />
+              <!-- Champ obligatoire -->
+            </div>
+
+            <!-- Champ pour l'adresse e-mail -->
+            <div class="formualaire">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <!-- Champ obligatoire avec validation de format email -->
+            </div>
+
+            <!-- Champ pour le numéro de téléphone -->
+            <div class="formualaire">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" required />
+              <!-- Champ obligatoire avec format téléphone -->
+            </div>
+
+            <!-- Champ pour la date de réservation -->
+            <div class="formualaire">
+              <label for="date">Date de réservation</label>
+              <input type="date" id="date" name="date" required />
+              <!-- Champ obligatoire avec sélecteur de date -->
+            </div>
+
+            <!-- Champ pour l'heure de réservation -->
+            <div class="formualaire">
+              <label for="time">Heure de réservation</label>
+              <input type="time" id="time" name="time" required />
+              <!-- Champ obligatoire avec sélecteur d'heure -->
+            </div>
+
+            <!-- Champ pour le nombre de personnes -->
+            <div class="formualaire">
+              <label for="people">Nombre de personnes</label>
+              <input type="number" id="people" name="people" min="1" required />
+              <!-- Champ obligatoire avec valeur minimale de 1 -->
+            </div>
+
+            <!-- Bouton pour soumettre le formulaire -->
+            <button type="submit">Réserver</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Pied de page pour les informations complémentaires -->
+    <footer>
+      <footer>
+        <div class="footer">
+          <div class="contenu-footer">
+            <div class="contact">
+              <h3>Contact</h3>
+              <p>06.26.80.63.08</p>
+              <p>BonAppetit@mail.com</p>
+              <p>38 Avenue de la Republique<br />Paris</p>
+            </div>
+            <div class="hour">
+              <h3>horaires d'ouverture et de fermeture</h3>
+              <p>LUNDI:11:30 - 23H30</p>
+              <p>MARDI:11:30 - 23H30</p>
+              <p>MERCRED:11:30 - 23H30</p>
+              <p>JEUDI:11:30 - 23H30</p>
+              <p>VENDREDI:11:00 - 00H30</p>
+              <p>SAMEDI:11:00 - 00H30</p>
+            </div>
+          </div>
+          <div class="img-links">
+            <a href="#"
+              ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+              alt="logo insta"</a
+            >
+            <a href="#"
+              ><img
+                src="https://e7.pngegg.com/pngimages/796/374/png-clipart-linkedin-linkedin-thumbnail.png"
+                alt="logo likedin"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+                alt=" logo Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios_filled/512/FFFFFF/tiktok.png"
+                alt="logo tiktok"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
+                alt="logo X"
+            /></a>
+          </div>
+          <div class="bottom-links">
+            <a href="#">crédits</a>
+            <a href="#">mentions légales</a>
+          </div>
+        </div>
+      </footer>
+    </footer>
+  </body>
 </html>

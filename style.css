@@ -70,7 +70,7 @@ ul a:hover {
 
 article.container-start {
   height: 100vh;
-  background-image: url(/cover-start.png);
+  background-image: url(./cover-start.png);
   background-attachment: fixed;
 }
 
